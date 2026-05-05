@@ -59,6 +59,11 @@ const handleSubmit = async () => {
           {{ loading ? '登入中⋯' : '登入' }}
         </button>
       </form>
+
+      <p class="login-footer">
+        還沒有帳號？
+        <RouterLink to="/register">立即註冊</RouterLink>
+      </p>
     </div>
   </div>
 </template>

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ChatView from '../views/ChatView.vue'
 import LoginView from '../views/LoginView.vue'
+import RegisterView from '../views/RegisterView.vue'
 import { authState } from '../api/auth'
 
 const router = createRouter({
@@ -8,6 +9,7 @@ const router = createRouter({
   routes: [
     { path: '/', component: ChatView, meta: { requiresAuth: true } },
     { path: '/login', component: LoginView },
+    { path: '/register', component: RegisterView },
   ],
 })
 

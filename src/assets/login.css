@@ -87,3 +87,19 @@
   color: #4b5263;
   cursor: not-allowed;
 }
+
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.login-footer a {
+  color: #6b8cdb;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}

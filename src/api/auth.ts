@@ -20,6 +20,11 @@ export async function login(username: string, password: string): Promise<void> {
   authState.isLoggedIn = true
 }
 
+export async function register(username: string, email: string, password: string): Promise<void> {
+  await axios.post('/api/register', { username, email, password }, { withCredentials: true })
+  authState.isLoggedIn = true
+}
+
 export async function logout(): Promise<void> {
   await axios.post('/api/logout', null, { withCredentials: true }).catch(() => {})
   authState.isLoggedIn = false
